@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>URL shortner web app</title>
+  </head>
+  <body>
+    <section>
+      <div class="long__url">
+        <p class="title">Write Long URL:</p>
+        <div class="input__area">
+          <form action="">
+            <input id="urlinput" type="text" placeholder="Type long URL here" />
+            <button onclick="shorturl()"">Generate Short URL</button>
+          </form>
+        </div>
+        <div class="output__area">
+          <p>Your Short URL is:</p>
+          <p></p>
+          <a href="">copy</a>
+        </div>
+      </div>
+      <div class="short__url"></div>
+    </section>
+    <section>
+      <div class="long__url">
+        <p class="title">Write Short URL:</p>
+        <div class="input__area">
+          <form action="">
+            <input type="text" placeholder="Type short URL here" />
+            <button>Retrieve Long URL</button>
+          </form>
+        </div>
+        <div class="output__area">
+          <p>Your Original URL is:</p>
+          <p></p>
+          <a href="">copy</a>
+        </div>
+      </div>
+      <div class="short__url"></div>
+    </section>
+  </body>
+</html>
